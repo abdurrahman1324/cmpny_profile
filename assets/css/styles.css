@@ -1,0 +1,147 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    background: #29e4d4;
+    color: #fff;
+    padding: 20px 0;
+    overflow: hidden;
+}
+
+header .logo {
+    float: left;
+    display: inline-block;
+    width: 60px;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Sections */
+section {
+    padding: 20px 0;
+}
+
+#home {
+    background: url('../images/bg.jpg') no-repeat center center/cover;
+    color: #111313;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#home h1 {
+    font-size: 50px;
+}
+
+#home p {
+    font-size: 40px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    header .logo {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header nav {
+        float: none;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    header nav ul li {
+        display: block;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    #home {
+        height: 300px;
+    }
+
+    #home h1 {
+        font-size: 40px;
+    }
+
+    #home p {
+        font-size: 18px;
+    }
+
+    .container {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    header .logo {
+        width: 120px;
+    }
+
+    #home h1 {
+        font-size: 30px;
+    }
+
+    #home p {
+        font-size: 16px;
+    }
+
+    header nav ul li a {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 100%;
+    }
+}
